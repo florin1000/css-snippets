@@ -1,0 +1,122 @@
+:root {
+    --red-orange-color: #FF5C28;
+    --dark-grey-color: rgba(0, 0, 0, .6);
+}
+
+* {
+    box-sizing: border-box
+}
+
+html, body {
+    background-color: #888;
+    font-family: 'Lato', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+nav {
+    height: 80px;
+    width: 100%;
+    background-color: var(--dark-grey-color);
+    padding: 15px;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.side-banner-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    right: 0;
+    top: 18%;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.header ul li {
+    display: block;
+    height: 3px;
+    width: 25px;
+    background-color: var(--red-orange-color);
+    transition: transform 0.8s ease-in-out;
+}
+
+.header ul:hover li:nth-child(2) {
+    transform: translate3d(5px, 0, 0);
+    background-color: white;
+}
+
+.header ul.hamburger {
+    z-index: 100;
+}
+
+.header ul li:nth-child(2) {
+    opacity: 1;
+    transition: opacity 0.5s ease;
+}
+
+.header ul li:nth-child(1), .header ul li:nth-child(3) {
+    transition: all 0.5s ease-in-out;
+}
+
+.header ul.open-drawer li:nth-child(2) {
+    opacity: 0;
+}
+
+.header ul.open-drawer li:nth-child(1) {
+    transform: rotate(45deg);
+}
+
+.header ul.open-drawer li:nth-child(3) {
+    transform: rotate(-45deg);
+}
+
+.side-container {
+    width: 250px;
+    position: fixed;
+    top: 0;
+    right: -250px;
+    height: 100%;
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    padding-top: 25px;
+    z-index: 10;
+    transition: all .8s ease-in-out;
+}
+
+.side-container.open-drawer {
+    width: 250px;
+    position: fixed;
+    top: 0;
+    right: 0;
+    animation: right-in 0.8s ease-in-out;
+
+}
+
+.side-container li {
+    color: white;
+    padding-top: 5px;
+    margin: 5px;
+    text-transform: uppercase;
+}
+
+@keyframes right-in {
+    0% {
+        right: -250px;
+    }
+    90% {
+        right: 20px;
+    }
+    100% {
+        right: 0;
+    }
+}

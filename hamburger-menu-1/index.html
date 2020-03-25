@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
+    <title>Side Banner</title>
+    <link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<nav class="header">
+    <ul id="hamburger" class="hamburger">
+        <li></li>
+        <li></li>
+        <li></li>
+
+    </ul>
+</nav>
+<div class="side-container" id="side-container">
+    <nav>
+        <ul>
+            <li>Home</li>
+            <li>Contact</li>
+        </ul>
+    </nav>
+
+</div>
+<script>
+    const hamburger = document.getElementById('hamburger');
+    const sideContainer = document.getElementById('side-container');
+
+    function handleDrawer() {
+        if (this.classList.contains('open-drawer')) {
+            this.classList.remove('open-drawer');
+            sideContainer.classList.remove('open-drawer');
+        } else {
+            sideContainer.classList.add('open-drawer');
+            this.classList.add('open-drawer');
+        }
+    }
+
+    hamburger.addEventListener("click", handleDrawer)
+</script>
+</body>
+</html>
