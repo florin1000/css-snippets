@@ -59,8 +59,7 @@ a.nav-element {
     background: var(--spanish-gray);
     width: 64px;
     height: 42px;
-    /*border-bottom: 1px solid black;*/
-    box-shadow: -16px 8px 0 #fff;
+    box-shadow: -16px 8px 0 #ddd;
     transition: all .3s ease-in-out;
 }
 
