@@ -14,7 +14,7 @@
 }
 
 html, body {
-    background-color: #000;
+    background-color: #fff;
     font-family: 'Lato', sans-serif;
     margin: 0;
     padding: 0;
@@ -59,14 +59,14 @@ a.nav-element {
     background: var(--spanish-gray);
     width: 64px;
     height: 42px;
-    border-bottom: 1px solid black;
+    /*border-bottom: 1px solid black;*/
     box-shadow: -16px 8px 0 #fff;
     transition: all .3s ease-in-out;
 }
 
 a.nav-element:hover {
     background: var(--filipine-orange);
-    box-shadow: -32px 32px 0 var(--spanish-gray);
+    box-shadow: -23px 18px 0 var(--spanish-gray);
     transform: translate(15px, -15px);
     transition: all .3s ease-in-out;
 }
@@ -84,33 +84,36 @@ a.nav-element:hover:before, a.nav-element:hover:after {
 
 a.nav-element:before {
     height: 42px;
-    background: var(--dark-grey-color);
+    background: grey;
     top: 4px;
     left: -8px;
     transform: skewY(-45deg);
 }
 
 a.nav-element:hover:before {
-    width: 16px;
+    width: 7px;
     background: var(--filipine-orange);
-    top: 8px;
-    left: -16px;
+    top: 4px;
+    left: -7px;
 }
 
 a.nav-element:after {
     height: 64px;
-    background: var(--dark-grey-color);
+    background: grey;
     bottom: -35px;
     left: 24px;
     transform: rotate(90deg) skew(0, 45deg);
 }
-
+a.nav-element:hover:after{
+    background: var(--filipine-orange);
+}
 .img-container {
     display: flex;
     align-items: center;
     justify-content: center;
     width: 100%;
     height: 100%;
+    border-bottom: 1px solid black;
 }
 
 .img-container img {
