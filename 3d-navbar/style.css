@@ -14,7 +14,7 @@
 }
 
 html, body {
-    background-color: #ddd;
+    background-color: #000;
     font-family: 'Lato', sans-serif;
     margin: 0;
     padding: 0;
@@ -60,48 +60,48 @@ a.nav-element {
     width: 64px;
     height: 42px;
     border-bottom: 1px solid black;
-    box-shadow: -16px 8px 0 var(--filipine-orange);
-    transition: all .25s ease-in-out;
+    box-shadow: -16px 8px 0 #fff;
+    transition: all .3s ease-in-out;
 }
 
 a.nav-element:hover {
     background: var(--filipine-orange);
     box-shadow: -32px 32px 0 var(--spanish-gray);
     transform: translate(15px, -15px);
-    transition: all .25s ease-in-out;
+    transition: all .3s ease-in-out;
 }
 
 .nav-element:before, .nav-element:after {
     content: '';
     position: absolute;
-    transition: all .25s ease-in-out;
-    width: .5em;
+    transition: all .3s ease-in-out;
+    width: 8px;
 }
 
 a.nav-element:hover:before, a.nav-element:hover:after {
-    transition: all .25s ease-in-out;
+    transition: all .3s ease-in-out;
 }
 
 a.nav-element:before {
-    height: 2.5em;
+    height: 42px;
     background: var(--dark-grey-color);
-    top: .25em;
-    left: -.5em;
+    top: 4px;
+    left: -8px;
     transform: skewY(-45deg);
 }
 
 a.nav-element:hover:before {
+    width: 16px;
     background: var(--filipine-orange);
-    width: 1em;
-    top: .5em;
-    left: -1em;
+    top: 8px;
+    left: -16px;
 }
 
 a.nav-element:after {
-    height: 4em;
+    height: 64px;
     background: var(--dark-grey-color);
-    bottom: -2.25em;
-    left: 1.5em;
+    bottom: -35px;
+    left: 24px;
     transform: rotate(90deg) skew(0, 45deg);
 }
 
