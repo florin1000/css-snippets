@@ -3,9 +3,10 @@
     --white-blue: #dadbe7;
     --middle-white-blue: #9497a7;
     --petrol-blue: #545871;
-    --bricks: #c37e7b;
+    --bricks: #EBD0CE;
     --pink-cream: #f1cfcd;
     --grey-cream: #e9dbda;
+    --cream-white: #F7ECEB;
     --hot-cream: #faeceb;
 }
 
@@ -73,7 +74,7 @@ html, body {
 
 .right-container {
     flex: 1;
-    background: var(--pink-cream);
+    background: var(--cream-white);
     position: relative;
     color: var(--petrol-blue);
 }
@@ -81,6 +82,7 @@ html, body {
 .top-form-container {
     padding: 50px;
     display: flex;
+    flex-direction: column;
 }
 
 .top-form-container h1 {
@@ -114,4 +116,27 @@ html, body {
     .right-container {
         flex: 2;
     }
+}
+
+form.login-form {
+    display: flex;
+    flex-direction: column;
+}
+
+.row {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+.frequency-radio:before{
+    content:"Frequency";
+    text-transform: capitalize;
+    font-size: 16px;
+    padding-bottom: 5px;
+}
+.date-wrapper:before{
+    content:"Start date";
+    text-transform: capitalize;
+    font-size: 16px;
+    padding-bottom: 5px;
 }
