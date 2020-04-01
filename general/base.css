@@ -1,5 +1,6 @@
 :root {
     --white-gray: #f0f1f8;
+    --whitee: #eee;
     --white-blue: #dadbe7;
     --middle-white-blue: #9497a7;
     --petrol-blue: #545871;
@@ -24,6 +25,9 @@ html, body {
 
 .flex {
     display: flex;
+}
+
+.items-center {
     align-items: center;
 }
 
