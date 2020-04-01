@@ -5,11 +5,12 @@
     <title>job-list-card</title>
     <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
     <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../general/base.css">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 <section class="pane">
-    <div class="flex flex-col left-container">
+    <div class="flex items-center flex-col left-container">
         <div class="title-wrapper">
             <div class="img-container">
                 <img src="" alt="">
@@ -28,56 +29,65 @@
         <div class="top-form-container">
             <h1>Lorem ipsum sin dolor adipicing et talent darem confundatum leser</h1>
             <form action="#" id="login-form" class="login-form">
-                <div class="row">
-                    <div class="frequency-radio">
-                        <label>
-                            <input type="radio">
-                        </label>
-                        <label>
-                            <input type="radio">
-                        </label>
+                <div class="row first-row">
+                    <div class="flex flex-col">
+                        <div class="row-title frequency-title">Frequency</div>
+                        <div class="flex-center-space-between frequency-radio-wrapper">
+                            <input type="radio" name="recurring" id="recurring" class="radio-tab recurring"
+                                   placeholder="recurring">
+                            <label for="recurring" class="flex-center">recurring</label>
+                            <input type="radio" name="one-time" id="one-time" class="radio-tab one-time"
+                                   placeholder="one time">
+                            <label for="one-time" class="flex-center">one time</label>
+                        </div>
                     </div>
-                    <div class="date-wrapper">
-                        <label>
-                            <input type="text" name="date" placeholder="MM/DD/YYYY">
-                        </label>
+                    <div class="flex flex-col">
+                        <label for="start-date" class="start-date-label">Start date</label>
+                        <input type="text" name="start-date" id="start-date" placeholder="MM/DD/YYYY">
                     </div>
-                </div> 
-                <div class="row days-radio">                    
-                        <label>
-                            <input type="radio">
-                        </label>
-                        <label>
-                            <input type="radio">
-                        </label>
-                        <label>
-                            <input type="radio">
-                        </label>
-                        <label>
-                            <input type="radio">
-                        </label>
-                        <label>
-                            <input type="radio">
-                        </label>
-                        <label>
-                            <input type="radio">
-                        </label>
-                        <label>
-                            <input type="radio">
-                        </label>                     
                 </div>
-                <div class="row daytime">
-                        <label>
-                            <input type="radio">
-                        </label>
-                        <label>
-                            <input type="radio">
-                        </label>
-                        <label>
-                            <input type="radio">
-                        </label>
+                <div class="flex flex-col row days-radio">
+                    <div class="row-title">Days Select all that apply</div>
+                    <div class="flex-center-space-between days-radio-buttons-wrapper">
+                        <input type="radio" name="mon" id="mon" class="radio-tab mon"
+                               placeholder="mon">
+                        <label for="mon" class="flex-center">mon</label>
+                        <input type="radio" name="tue" id="tue" class="radio-tab tue"
+                               placeholder="tue">
+                        <label for="tue" class="flex-center">tue</label>
+                        <input type="radio" name="wed" id="wed" class="radio-tab wed"
+                               placeholder="wed">
+                        <label for="wed" class="flex-center">wed</label>
+                        <input type="radio" name="thu" id="thu" class="radio-tab thu"
+                               placeholder="thu">
+                        <label for="thu" class="flex-center">thu</label>
+                        <input type="radio" name="fri" id="fri" class="radio-tab fri"
+                               placeholder="fri">
+                        <label for="fri" class="flex-center">fri</label>
+                        <input type="radio" name="sat" id="sat" class="radio-tab sat"
+                               placeholder="sat">
+                        <label for="sat" class="flex-center">sat</label>
+                        <input type="radio" name="sun" id="sun" class="radio-tab sun"
+                               placeholder="sun">
+                        <label for="sun" class="flex-center">sun</label>
+                    </div>
                 </div>
-                <div class="row">
+                <div class="flex flex-col row daytime">
+                    <div class="row-title">Timers Select all that apply</div>
+                    <div class="flex-center-space-between days-radio-buttons-wrapper">
+                        <input type="radio" name="morning" id="morning" class="radio-tab morning"
+                               placeholder="morning">
+                        <label for="morning" class="flex-center">morning</label>
+                        <input type="radio" name="afternoon" id="afternoon" class="radio-tab afternoon"
+                               placeholder="afternoon">
+                        <label for="afternoon" class="flex-center">afternoon</label>
+                        <input type="radio" name="evening" id="evening" class="radio-tab evening"
+                               placeholder="evening">
+                        <label for="evening" class="flex-center">evening</label>
+                    </div>
+                </div>
+                <div class="flex flex-col row textarea-row">
+                    <div class="row-title">Notes for you</div>
                     <label for="">
                         <textarea name="textarea" id="" cols="30" rows="10"></textarea>
                     </label>
