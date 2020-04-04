@@ -1,12 +1,10 @@
-ul{
+ul {
     padding-left: 0;
     margin-left: 0;
 
 }
-ul li{
-    list-style: none;
-    padding: 10px;
-}
+
+
 .body-wrapper {
     background: #dedede center center no-repeat url("images/background_wide.jpg");
     background-size: cover;
@@ -30,6 +28,21 @@ ul li{
 .pane-right {
     width: 100%;
     background-color: var(--white-gray);
+}
+
+.img-container {
+    width: 200px;
+}
+
+.img-container img {
+    max-width: 100%;
+    width: 100%;
+}
+
+.tabs-wrapper ul li {
+    list-style: none;
+    padding: 15px 25px;
+    border-bottom: 1px solid var(--white-gray);
 }
 
 @media (min-width: 1024px) {
