@@ -1,34 +1,125 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
+  <head>
+    <meta charset="UTF-8" />
     <title>job-list-card</title>
-    <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
-    <link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="../general/base.css">
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-<section class="flex-center body-wrapper">
-    <section class="flex pane">
+    <meta
+      name="viewport"
+      content="width=device-width,minimum-scale=1,initial-scale=1"
+    />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Lato&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../general/base.css" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <section class="flex-center body-wrapper">
+      <section class="flex pane">
         <div class="flex flex-col pane-left">
-            <div class="flex-center-space-between pane-header">
-               <div class="navigation-wrapper">
-                    <div class="img-container brand">
-                        <img src="images/logo.jpg" alt="">
-                    </div>
-                    <div class="flex-center tabs-wrapper">
-                        <ul class="flex-center">
-                            <li><a href="#">Customer Details</a></li>
-                            <li><a href="#">Shipping Details</a></li>
-                            <li><a href="#">Payment Selection</a></li>
-                        </ul>
-                    </div>
-               </div>
+          <div class="flex-center-space-between flex-col pane-header">
+            <div class="navigation-wrapper flex-center-space-between">
+              <div class="img-container brand">
+                <img src="images/logo.jpg" alt="" />
+              </div>
+              <div class="flex-center tabs-wrapper">
+                <ul class="flex-center">
+                  <li><a href="#">Customer Details</a></li>
+                  <li><a href="#">Shipping Details</a></li>
+                  <li class="active-tab"><a href="#">Payment Selection</a></li>
+                </ul>
+              </div>
             </div>
+            <div class="payment-body flex-center-space-between">
+              <div class="img-container card-image">
+                <img src="images/credit-card.png" alt="credit-card" />
+              </div>
+              <div class="card-details-wrapper flex flex-col">
+                <div class="title">Card Details</div>
+                <form action="#" class="payment-form">
+                  <div class="row">
+                    <form class="col s12">
+                      <div class="row">
+                        <div class="input-field col s12">
+                          <i class="material-icons prefix">account_circle</i>
+                          <input
+                            placeholder="john Dow"
+                            id="first_name"
+                            type="text"
+                            class="validate"
+                          />
+                          <label for="first_name">Cardholder name</label>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="input-field col s12">
+                          <i class="material-icons prefix">credit_card</i>
+                          <input
+                            id="cardnumber"
+                            type="text"
+                            class="validate"
+                            placeholder="Card number"
+                          />
+                          <label for="cardnumber">card number</label>
+                        </div>
+                      </div>
+                      <div class="row expiry-date">
+                        <div class="col s12">
+                          <div class="input-field col s4">
+                            <i class="material-icons prefix">calendar_today</i>
+                            <input
+                              id="cardnumber"
+                              type="text"
+                              class="validate"
+                              placeholder="01"
+                            />
+                            <label for="cardnumber">expiry month</label>
+                          </div>
+                          <div class="input-field col s4">
+                            <i class="material-icons prefix">calendar_today</i>
+                            <input
+                              id="cardnumber"
+                              type="text"
+                              class="validate"
+                              placeholder="2022"
+                            />
+                            <label for="cardnumber">expiry year</label>
+                          </div>
+                          <div class="input-field col s4">
+                            <i class="material-icons prefix">lock</i>
+                            <input
+                              id="cardnumber"
+                              type="text"
+                              class="validate"
+                              placeholder="111"
+                            />
+                            <label for="cardnumber">cvv</label>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <button type="submit" class="submit" id="submit">Purchase</button>
+                      </div>
+                    </form>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
         </div>
         <div class="pane-right"></div>
+      </section>
     </section>
-</section>
-</body>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+  </body>
+  <!-- Compiled and minified JavaScript -->
 </html>
